@@ -5,7 +5,7 @@ public class AddressScreen
 public static String[]  newAddress = {"xpath","//*[@text='Add a New Address' or @text='Continue']","xpath","iosXpath","addressFullName"};	
 public static String [] addressFullName = {"xpath","//*[@resource-id='enterAddressFullName']","xpath","iosXpath","addressFullName"};
 public static String [] addressPhoneNumber = {"xpath","//*[@resource-id='enterAddressPhoneNumber']","xpath","iosXpath","addressPhoneNumber"};
-public static String [] addressPostelcode = {"xpath","//*[@resource-id='enterAddressPostalCode']","xpath","iosXpath","addressPostelcode"};
+public static String [] addressPostalcode = {"xpath","//*[@resource-id='enterAddressPostalCode']","xpath","iosXpath","addressPostalcode"};
 public static String [] addressCity = {"xpath","//*[@resource-id='enterAddressCity']","xpath","iosXpath","addressCity"};
 public static String [] stateOrRegion = {"xpath","//*[@resource-id='enterAddressStateOrRegion']","xpath","iosXpath","stateOrRegion"};
 public static String [] addressLine1 = {"xpath","//*[@resource-id='enterAddressAddressLine1']","xpath","iosXpath","addressLine1"};

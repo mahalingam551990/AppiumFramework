@@ -1,14 +1,9 @@
 package PageObjectModel.AppiumFramework.PageObjects;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-
-import org.openqa.selenium.By;
-
 import PageObjectModel.AppiumFramework.ObjectRepository.PDPScreen;
 import PageObjectModel.AppiumFramework.ObjectRepository.SearchScreen;
 import PageObjectModel.AppiumFramework.common.ActionKeyword;
-import PageObjectModel.AppiumFramework.common.Driver;
 
 public class PDPPage extends ActionKeyword
 {
@@ -19,7 +14,6 @@ public class PDPPage extends ActionKeyword
 		scrolldown("Add to Cart");
 		Tap(PDPScreen.addToCart);
 		Tap(PDPScreen.cartCount);
-		//Tap(PDPScreen.proceedToBuy);
 	}
 	public static void clickonSearchResults()
 	{
@@ -41,7 +35,4 @@ public class PDPPage extends ActionKeyword
 			System.out.println("exception in storing values in map object  "+e.getMessage());
 		}
 	}
-	
-	
-	
 }

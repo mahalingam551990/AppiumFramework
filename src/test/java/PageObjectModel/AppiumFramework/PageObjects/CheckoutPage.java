@@ -1,25 +1,17 @@
 package PageObjectModel.AppiumFramework.PageObjects;
 
-import java.util.ArrayList;
-
-import org.openqa.selenium.By;
 import org.testng.Assert;
-
 import PageObjectModel.AppiumFramework.ObjectRepository.CheckoutScreen;
-import PageObjectModel.AppiumFramework.common.ObjectConverter;
-import PageObjectModel.AppiumFramework.ObjectRepository.AddressScreen;
 import PageObjectModel.AppiumFramework.common.ActionKeyword;
 import PageObjectModel.AppiumFramework.common.Driver;
 
 public class CheckoutPage extends ActionKeyword
 {
-
 	public static void verifyProductDetails()
 	{
 		try
 		{
 		String expectedProductPrice   = PDPPage.productDetails.get("productPrice");
-		
 		String actualProductPrice=Driver.driver.findElement(OC(CheckoutScreen.ProductDescription,expectedProductPrice.replace("rupees ", ""))).getText();
 		       actualProductPrice=actualProductPrice.replace("   ", "").replace(".00", "");
 			if(expectedProductPrice.contains(actualProductPrice))
@@ -36,7 +28,6 @@ public class CheckoutPage extends ActionKeyword
 			System.out.println("exception in product details "+e.getMessage());
 		}
 	}
-	
 	public static void continueScreen()
 	{
 		scrolldown("Continue");
@@ -44,15 +35,10 @@ public class CheckoutPage extends ActionKeyword
 		{
 			Tap(CheckoutScreen.proceedToContinue);
 		}
-		
-		
 	}
 	
 	public static void proceedtoBuy()
 	{
 		Tap(CheckoutScreen.proceedToBuy);
 	}
-	
-	
-	
 }
